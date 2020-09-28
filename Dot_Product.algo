@@ -1,0 +1,35 @@
+ PROCEDURE dot_product (Tab1[],Tab2[])
+ VAR i : INTEGER;
+ VAR sum : INTEGER=0;
+
+ BEGIN
+IF (Tab1.length == Tab2.length) {
+FOR i =0 to Tab1.length STEP 1 DO 
+
+    sum := sum + Tab1[i] * Tab2[i];
+
+END FOR
+} ELSE {
+WRITE (" Please enter a correct Vector with the same length ")
+}
+END IF
+END
+
+
+ALGORITHM dot_product_For_N_Vector
+VAR 
+i,j:INTEGER;
+
+FOR i:=0 to Tab1[i].length STEP 1 DO
+    FOR j:=0 to Tab2[j].length SETP 1 DO
+    
+            dot_product(Tab1[i],Tab2[j])
+
+        IF (dot_product == 0) DO
+
+        WRITE (" Those two verctor are Orthogonal "+ "Tab1"+ Tab1, "Tab2"+ Tab2)
+
+        END IF
+    END FOR
+END FOR
+END
